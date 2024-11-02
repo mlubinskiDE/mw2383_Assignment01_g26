@@ -6,20 +6,25 @@ int main() {
 	
 	// declaration of intial variables
 	bool RPPSL = true;
-	char userInput;
+	char userInput[32];
 
-	while(RPPSL == true) {
+	while(RPPSL) {
 		
-		//ask user for input and write it onto declared userInput
-		//TODO: sanitize input to one character, avoid double printf, notify user of invalid input
+		// ask user for input and write it onto declared userInput
 		printf("Enter the one of the following letters: r, p, s, l, k (or x to exit):");
-		scanf("%c", &userInput);
+		fgets(userInput, sizeof(userInput), stdin);
 		
+		// check if user entered more than one character (excluding newline)
+		if (userInput[1] != '\n') {
+			printf("Invalid input. Please enter only one character. \n");
+			continue;
+		}
+
 		//ensure userInput is lowercase
-		userInput = tolower(userInput);
+		userInput[0] = tolower(userInput[0]);
 		
 		//rock-paper-scissors-lizzard-spock dictionary
-		switch (userInput)
+		switch (userInput[0])
 		{
 		case 'r':
 			printf("Scissors or Lizzard\n");
@@ -41,15 +46,14 @@ int main() {
 			printf("Rock or Scissors\n");
 			break;
 
-		default:
-				break;
-		};
-		
-		//exit condition
-		if (userInput == 'x') {
-			RPPSL = false;
-		}
+		case 'x':
+			RPPSL = false; //exit condition
+			break;
 
+		default:
+			printf("Invalid input. Please enter r, p, s, l, k or x.\n");
+			break;
+		};
 	}
     
 	return 0;
