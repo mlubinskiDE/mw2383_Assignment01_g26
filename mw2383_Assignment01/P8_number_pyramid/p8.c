@@ -28,7 +28,7 @@ int main(){
 	
 	
 	
-	
+	int totalSum = 0;
 	int loopTracker = userInputValue;
 	for (int i = 0; i < userInputValue; i++) { // row itterator
 		
@@ -45,13 +45,14 @@ int main(){
 				k++;
 			}
 			printf("%s", pyramidStr[k]);
+			totalSum = totalSum + k;
 		}
 		printf("\n");
 		loopTracker--;
+		
 	}
 
-
-
+	printf("\nThe summation of all printed numbers is: %d", totalSum);
 
 	return 0;
 	
