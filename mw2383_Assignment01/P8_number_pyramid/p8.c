@@ -5,7 +5,6 @@
 int main(){  
 
 	
-	char *pyramidStr[] = {" ", "1", "2", "3", "4", "5", "6", "7", "8", "9"}; // I now realize how unneccesarily complex my solution is. I could have just printed the value of a all encomasing int variable rather than doing this non-scaleable array walk
 	char userInput[32];
 	int userInputValue;
 	bool correctUserInput = false;
@@ -33,7 +32,7 @@ int main(){
 	for (int i = 0; i < userInputValue; i++) { // row itterator
 		
 		for (int h = 0; h < userInputValue - loopTracker; h++) { // whitespace
-			printf("%s", pyramidStr[0]);
+			printf(" ");
 		}
 
 		int k = 0;
@@ -44,7 +43,7 @@ int main(){
 			else {
 				k++;
 			}
-			printf("%s", pyramidStr[k]);
+			printf("%d", k);
 			totalSum = totalSum + k;
 		}
 		printf("\n");
