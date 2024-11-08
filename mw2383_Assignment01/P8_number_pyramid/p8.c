@@ -31,12 +31,12 @@ int main(){
 	int loopTracker = userInputValue;
 	for (int i = 0; i < userInputValue; i++) { // row itterator
 		
-		for (int h = 0; h < userInputValue - loopTracker; h++) { // whitespace
+		for (int h = 0; h < userInputValue - loopTracker; h++) { // whitespace printer to center pyramid
 			printf(" ");
 		}
 
 		int k = 0;
-		for (int j = 1; j < (loopTracker*2); j++) { // array walk
+		for (int j = 1; j < (loopTracker*2); j++) { // number printer and tracker of sum of printed numbers
 			if (j > loopTracker) {
 				k--;
 			}
