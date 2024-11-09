@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include <stdbool.h> // boolian: true false
 #include <ctype.h>
 
 int main() {
 	
 	// declaration of intial variables
 	bool RPPSL = true;
-	char userInput[32];
+	char userInput[32]; // 32 - size of array in bits
 
 	while(RPPSL) {
 		
 		// ask user for input and write it onto declared userInput
-		printf("Enter the one of the following letters: r, p, s, l, k (or x to exit):");
+		printf("Enter one of the following letters: r, p, s, l, k (or x to exit):");
 		fgets(userInput, sizeof(userInput), stdin);
 		
 		// check if user entered more than one character (excluding newline)
