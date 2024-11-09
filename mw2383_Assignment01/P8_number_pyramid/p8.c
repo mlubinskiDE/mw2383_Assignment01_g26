@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include<ctype.h>
+#include <ctype.h>
 
 int main(){  
 
@@ -11,7 +11,7 @@ int main(){
 
 	printf("Please enter a number between 3 and 9: ");
 	fgets(userInput, sizeof(userInput), stdin);
-	sscanf(userInput, " %d", &userInputValue);
+	sscanf(userInput, "%d", &userInputValue);
 
 	// input validator
 	while (correctUserInput == false) {
@@ -21,7 +21,7 @@ int main(){
 		else {
 			printf("Invalid input. Please enter a number between 3 and 9: ");
 			fgets(userInput, sizeof(userInput), stdin);
-			sscanf(userInput, " %d", &userInputValue);
+			sscanf(userInput, "%d", &userInputValue);
 		}
 	}
 	
