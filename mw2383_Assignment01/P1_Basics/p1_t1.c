@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Write a program (p1 t1.c) that calculates and prints odd numbers between 0 and 200 to the terminal.
+
 int main(void) {
 	int i;
 	for (i = 1; i <= 200; i++) {
