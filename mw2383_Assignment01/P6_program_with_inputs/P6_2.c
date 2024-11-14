@@ -20,7 +20,7 @@ int main(void){
 				printf("The number is smaller than 6.\n");
 			}
 		else{
-			printf("The number is 6."); //implement exit condition
+			printf("The number is 6.");
 			return 0;
 			}
 		track++;

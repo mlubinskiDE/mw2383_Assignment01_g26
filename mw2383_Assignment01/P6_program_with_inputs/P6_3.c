@@ -8,11 +8,11 @@
 
 int userInput;
 
-int check_vadility(userInput){
+int check_validity(userInput){
 	bool correctUserInput = false;
 
 	while (correctUserInput == false) {
-		if (userInput > 6 && userInput < 11) {
+		if (userInput > 4 && userInput < 11) {
 			correctUserInput = true;
 		}
 		else {
@@ -27,10 +27,10 @@ int main(void){
 	printf("Please enter a number between 5 and 10: ");
 	scanf("%d", &userInput);
 
-	check_vadility; //how do I emplement some other code here?
+	check_validity(userInput);
 
-	for (int i = 1; i <= 300 && i >= 100; i++) {
-		if (!(i % userInput == 0)) {
+	for (int i = 100; i <= 300; i++) {
+		if (i % userInput == 0) {
 			printf("%d\n", i);
 		}
 	}

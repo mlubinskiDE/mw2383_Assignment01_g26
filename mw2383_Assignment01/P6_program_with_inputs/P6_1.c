@@ -11,11 +11,11 @@ int main(){
 	printf("Enter interger variable here: ");
 	scanf("%d", &integer);
 	printf("Enter float variable here: ");
-	scanf("%d", &flo);
+	scanf("%f", &flo);
 
-	float multiplication; //makes sense in my head but output doesn't
-	multiplication = integer * flo; //is there some type conversion afoot?
-	printf("Value of multiplication: %g", multiplication);
+	float multiplication;
+	multiplication = integer * flo;
+	printf("Value of multiplication: %f", multiplication);
     
 	return 0;
 }
