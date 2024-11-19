@@ -2,6 +2,11 @@
 #include <stdbool.h> // boolian: true false
 #include <ctype.h>
 
+//Write a C program using a switch-case statement for a Rock-Paper-Scissors-Lizard-Spock game
+//that prints out all options that win against an object selected by user input.
+//If the user enters a character other than r, R, p, P, s, S, l, L, k and K, the program should ask the user to re-enter it. 
+//Note that the program should continue the game until the user enters X or x to finish the game
+
 int main() {
 	
 	// declaration of intial variables
