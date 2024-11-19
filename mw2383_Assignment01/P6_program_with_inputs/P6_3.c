@@ -8,7 +8,7 @@
 
 int userInput;
 
-int check_validity(userInput){
+int check_validity(){
 	bool correctUserInput = false;
 
 	while (correctUserInput == false) {
@@ -27,7 +27,7 @@ int main(void){
 	printf("Please enter a number between 5 and 10: ");
 	scanf("%d", &userInput);
 
-	check_validity(userInput);
+	check_validity();
 
 	for (int i = 100; i <= 300; i++) {
 		if (i % userInput == 0) {
