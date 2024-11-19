@@ -9,7 +9,7 @@ int main(void){
 	int track = 0;
 	int userInput;
 
-    while(track != 3) {
+    while(track < 4) {
 		printf("Please enter a number here: ");
 		scanf("%d", &userInput);
 
