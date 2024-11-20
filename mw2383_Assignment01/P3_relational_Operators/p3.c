@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
+
  int var1, var2;
     int input_status;
     // Prompt and check input for var1
@@ -32,5 +33,8 @@ int main(void) {
     else {
         printf("Chocolate\nis\nsweet.\n");
     }
+
+	
+
 	return 0;
 }
